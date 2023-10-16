@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+{% from "includes/formhelpers.html" import render_field %}
+
+
+
+<h3>Mail Giriş</h3>
+<hr>
+
+<form  method="post">
+    {{ render_field(form.email,class = "form-control") }}
+    <button type="submit" class="btn btn-secondary">Gönder</button>
+
+</form>
+{% endblock body %}
